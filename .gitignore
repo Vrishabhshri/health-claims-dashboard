@@ -1,0 +1,17 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# data / local dbs
+data/*.db
+*.db
+*.sqlite
+*.sqlite3
+
+# notebooks
+*.ipynb_checkpoints/
+
+# os
+.DS_Store
