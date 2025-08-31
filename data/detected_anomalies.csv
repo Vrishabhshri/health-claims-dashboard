@@ -1,0 +1,10 @@
+claim_id,patient_id,procedure_code,procedure_desc,billing_amount,insurance_reimbursement,denial_flag,payer_type,date_of_service,global_mean,global_stddev,is_high_outlier
+C000709,P1895,29881,Knee arthroscopy meniscectomy,24223.5,11759.12,0,SelfPay,2024-09-06,892.82,1692.9,1
+C001118,P1720,29881,Knee arthroscopy meniscectomy,22163.2,15875.31,0,Medicare,2025-03-14,892.82,1692.9,1
+C001332,P1296,29881,Knee arthroscopy meniscectomy,22049.12,15046.95,0,Medicare,2025-08-03,892.82,1692.9,1
+C001381,P1738,29881,Knee arthroscopy meniscectomy,19798.76,14109.33,0,Medicare,2025-08-18,892.82,1692.9,1
+C001162,P1314,29881,Knee arthroscopy meniscectomy,15548.34,8828.01,0,Medicaid,2024-10-25,892.82,1692.9,1
+C000807,P1083,45378,Diagnostic colonoscopy,9755.5,7855.02,0,Commercial,2025-02-24,892.82,1692.9,1
+C001120,P1040,45378,Diagnostic colonoscopy,8374.04,5269.08,0,Medicaid,2025-03-29,892.82,1692.9,1
+C000648,P1383,45378,Diagnostic colonoscopy,6517.8,5041.1,0,Medicare,2024-11-04,892.82,1692.9,1
+C001693,P1081,29881,Knee arthroscopy meniscectomy,6167.84,5360.38,0,Commercial,2025-05-27,892.82,1692.9,1

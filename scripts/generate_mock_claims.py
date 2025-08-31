@@ -40,9 +40,13 @@ payer_weights = [p[1] for p in PAYER_TYPES]
 start_date = datetime.today() - timedelta(days=365)
 end_date = datetime.today()
 
+def random_date(start, end):
+    delta = end - start
+    return start + timedelta(days=random.randint(0, delta.days))
+
 def draw_reimbursement(billing_amount, payer):
     p = next(p for p in PAYER_TYPES if p[0] == payer)
-    paid_pct = random.uniform(p[2] p[3])
+    paid_pct = random.uniform(p[2], p[3])
     return round(billing_amount * paid_pct, 2)
 
 def main():

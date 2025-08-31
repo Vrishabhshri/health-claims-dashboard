@@ -1,0 +1,11 @@
+procedure_code,procedure_desc,n_claims,denied_claims,denial_rate_pct
+29881,Knee arthroscopy meniscectomy,198,25,12.63
+45378,Diagnostic colonoscopy,221,24,10.86
+70450,CT head/brain w/o contrast,185,18,9.73
+88305,Pathology tissue exam,187,11,5.88
+99214,"Office/outpatient visit est, moderate",191,11,5.76
+73030,X-ray shoulder 2+ views,195,10,5.13
+87086,Urine culture,210,9,4.29
+93000,Electrocardiogram complete,199,8,4.02
+99213,Office/outpatient visit est,211,7,3.32
+71046,Chest X-ray 2 views,203,5,2.46

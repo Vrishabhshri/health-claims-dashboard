@@ -8,7 +8,7 @@ DATA = ROOT / "data"
 SQL = ROOT / "sql"
 
 DB_PATH = DATA / "claims.sqlite"
-DB_CSV = DATA / "claims.csv"
+CSV_PATH = DATA / "claims.csv"
 
 def run_sql(conn, path):
     with open(path, "r", encoding="utf-8") as f:
@@ -33,6 +33,10 @@ def main():
 
     df = pd.read_csv(CSV_PATH)
     df.to_sql("claims", conn, index=False, if_exists="append")
+
+    revenue = df_from_query(conn, SQL / "revenue_by_procedure.sql")
+    denial = df_from_query(conn, SQL / "denial_rates.sql")
+    anomalies = df_from_query(conn, SQL / "anomalies_sqlite.sql")
 
     revenue.to_csv(DATA / "agg_revenue_by_procedure.csv", index=False)
     denial.to_csv(DATA / "agg_denial_rates.csv", index=False)
